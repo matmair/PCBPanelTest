@@ -1,0 +1,9 @@
+name: Panelize Test PCB
+
+on: [push]
+
+jobs:
+  call-panelize:
+    uses: jazzychad/PanelizePublic/.github/workflows/panelize.yml@main
+    with:
+      pcbfile: PCBPanelTest.kicad_pcb
