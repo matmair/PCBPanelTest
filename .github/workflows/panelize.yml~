@@ -1,6 +1,6 @@
 name: Panelize Test PCB
 
-on: [push, workflow_dispatch]
+on: [push]
 
 jobs:
   call-panelize:
