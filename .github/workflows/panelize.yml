@@ -4,7 +4,7 @@ on: [push, workflow_dispatch]
 
 jobs:
   call-panelize:
-    uses: jazzychad/PanelizePublic/.github/workflows/panelize.yml@main
+    uses: matmair/PanelizePublic@main
     with:
       pcbfile: PCBPanelTest.kicad_pcb
       panel_args: "--layout 'grid; rows: 2; cols: 2; space: 2mm' --tabs 'fixed; width: 3mm; vcount: 2' --cuts 'mousebites; drill: 0.5mm; spacing: 1mm; offset: 0.2mm; prolong: 0.5mm' --framing 'frame; width: 5mm; space: 3mm; cuts: both' --post 'millradius: 1mm' --fiducials '3fid; hoffset: 5mm; voffset: 2.5mm; coppersize: 2mm; opening: 1mm;'"
